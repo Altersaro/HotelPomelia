@@ -1,0 +1,518 @@
+/*
+Theme Name: Hotel Pomelia
+Text Domain: Hotel Pomelia
+Version: 1.3
+Description: Simple Hotel Theme
+Tags: Responsive, SimpleDesign
+Author: Rosario Luca Linguanti
+Author URI: https://github.com/Altersaro
+*/
+
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.main-wrapper{
+    background-color: rgba(166, 143, 114, 0.2);
+}
+.container-fluid{
+    overflow:hidden;
+    padding: 0 !important;
+
+}
+
+
+.navbar{
+    background-color:rgba(21, 64, 32, 0.8) !important;
+    height: 10vh;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important; 
+    display: block;
+    margin: 0;
+}
+
+.navbar-nav{
+    width: 500px;
+    justify-content: space-around;
+    flex-grow: inherit;
+}
+
+.nav-item a{
+    font-size: 20px;
+    text-transform: uppercase !important;  
+    color: #A68F72 !important;
+    text-decoration: none;
+} 
+
+.nav-item a:hover{
+    color: black;
+}
+
+
+.card{
+    border:none;
+    border-radius: 0%;
+}
+
+
+.card-img{
+    height: 90vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+.card-img-overlay{
+    background-color: rgba(21, 64, 32, 0.6);
+    border: 1px solid #A68F72;
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}   
+
+
+
+.card-title{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: rgba(166, 143, 114);
+
+}
+
+.card-text{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: #177DA6;
+}
+
+.logo{
+    height:100px ;
+}
+
+.wp-block-columns{
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.row{
+    height: 80vh;
+}
+
+.col-lg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%W;
+}
+
+.col-text-l{
+    width: 60%;
+    line-height:1.25em;
+    color: #A68F72;
+    text-transform: uppercase;
+}
+
+.col-text-r{
+    width: 70%;
+    line-height:1.25em;
+    color: #A68F72;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+
+.col-img img{
+    width: 45vw;
+    height: 60vh;
+    object-fit:cover;
+    box-shadow:  5px 5px  5px #A68F72;
+}
+
+.col-img-l img{
+    box-shadow:  -5px 5px  5px #A68F72 ;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-top {
+    animation: fade-top 1s ease-in;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.partners-logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-partner{
+    height: 250px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.card-footer{
+    height: 10vh;
+    background-color:rgba(21, 64, 32, 0.8) !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+}
+
+.col-title{
+    text-transform: uppercase;
+}
+
+.olive,
+.olive a{
+    color: #808000 !important;
+}
+
+.white,
+.white a{
+    color: white !important;
+}
+
+.nature,
+.nature a{
+    color: #2D572C !important;
+}
+
+.sea,
+.sea a{
+    color:#090675 !important;
+}
+
+
+
+.wp-block{
+    padding: 0px 0px !important;
+}
+
+.about-column{
+    background-color: rgba(21, 64, 32, 0.6);
+    padding: 10px 0px;
+    border: 1px solid #A68F72;
+}
+
+.wpcf7-form{
+    width:60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(21, 64, 32, 0.6);
+    border: 1px solid #A68F72;
+    -webkit-box-shadow: -10px 0px 13px -7px #A68F72, 10px 0px 13px -7px #A68F72, -5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #A68F72, 10px 0px 13px -7px #A68F72, -5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.form-label{
+    text-transform: uppercase;
+    color: #A68F72;
+    border: none;
+    font-size: 24px;
+}
+
+.wpcf7 input[type="text"]{
+    border: none;
+
+}
+
+.wpcf7-submit{
+    padding: 10px 40px;
+    border: 1px solid #2D572C;
+    background-color: rgba(166, 143, 114, 0.6);
+    color: #2D572C;
+    text-transform: uppercase;
+}
+.wpcf7-spinner{
+   margin: 0px;
+   color: #A68F72;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+textarea,
+#comment{
+    width: 80%;
+    color: #2D572C;
+
+}
+
+.comments-inner{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(21, 64, 32, 0.5);
+}
+
+.comment-author,
+.comments-inner p {
+    color: white;
+}
+
+.comment-author a {
+    color: #1877BC;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.comment-meta a{
+    color: black;
+    text-decoration: none;
+}
+
+.comment-reply-link,
+.form-submit input{
+    padding: 5px;
+    background-color: #2D572C;
+    color: #A68F72;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
+
+
+.depth-2{
+    margin: 20px;
+    background-color: rgba(166, 143, 114, 0.6);
+}
+
+.comment-respond{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.comment-reply-title{
+    color: #A68F72;
+    text-transform: uppercase;
+}
+
+#commentform {
+    color: #A68F72;
+}
+
+#commentform a{
+    color: #1877BC;
+    text-decoration: none;
+}
+
+.comment-form-comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    padding: 0 !important;
+}
+
+
+@media screen and (max-width : 992px)  {
+    .navbar-collapse{
+        background-color:rgba(0, 37, 6, 0.6);
+        padding: 10px;
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav{
+        margin-left: 0px !important ;
+    }
+
+    .container-fluid{
+        overflow-wrap: break-word;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size:20px ;
+    }
+
+    .col-text-l{
+        margin-top: 30px;
+        text-align: center;
+        width: 60%;
+        color: #A68F72;
+    }
+
+    .col-text-r{
+        text-align: center !important;
+    }
+
+
+
+    .partners-logos{
+        flex-wrap: wrap;
+    }
+    .col-lg{
+        flex-direction:row;
+    }
+    .wpcf7-form{
+        width: 80%;
+    }
+    
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    textarea{
+        width: 80%;
+    
+    }
+
+
+.room-title a{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+    
+}
+
+@media  screen and (max-width:780px){
+    .col-img img{
+        width: 80vw;
+    }
+}
+
+@media  screen and (max-width:576px) {
+    .container-fluid{
+        padding: 0px;
+    }
+
+    .card{
+        border-radius: 0% !important;
+    }
+
+    .navbar-collapse{
+        margin-top: 18px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+    .col-lg{
+        flex-direction:column;
+    }
+
+    .col-img img{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .footer-title{
+        font-size: 12px
+    }
+
+    .footer-text{
+        font-size: 10px;
+    }
+
+    .wpcf7-form{
+        width: 100%;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    textarea{
+        width: 50%;
+    
+    }
+    
+}
